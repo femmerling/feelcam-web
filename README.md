@@ -22,9 +22,8 @@ Then open http://localhost:8000. Paths are absolute (`/assets/...`), so open it 
 
 ## Before launch
 
-- **App Store link:** replace `APP_STORE_ID` with the app's Apple ID (App Store Connect → App
-  Information → Apple ID, a number):
-  `grep -rl APP_STORE_ID . | xargs sed -i '' 's/APP_STORE_ID/1234567890/g'`
+- **App Store link:** https://apps.apple.com/app/id6826568990 (also the Smart App Banner
+  `app-id` in `index.html`).
 - **TelemetryDeck:** create an app for the website in TelemetryDeck (set it to "Show Data for a
   blog or static website"), then paste its App ID into `TELEMETRYDECK_APP_ID` in `assets/js/main.js`.
 - **App Store badge:** the buttons are plain text. To use Apple's official badge, download it from
