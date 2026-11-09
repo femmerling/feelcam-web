@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FeelCam: Film-Inspired iPhone Camera with Looks Named After Emotions</title>
+  <meta name="description" content="FeelCam is an iPhone camera app that shoots through feels: 16 film-inspired looks named after emotions. See the look live in the viewfinder, craft your own film recipes, and take full manual control.">
+  <link rel="canonical" href="https://feelcam.emfeld.com/">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="FeelCam">
+  <meta property="og:title" content="FeelCam: Shoot through a feel">
+  <meta property="og:description" content="An iPhone camera with film-inspired looks named after emotions. What you see is what you save.">
+  <meta property="og:url" content="https://feelcam.emfeld.com/">
+  <meta property="og:image" content="https://feelcam.emfeld.com/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="FeelCam on three iPhones: the feel list, a live viewfinder and the feel editor">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FeelCam: Shoot through a feel">
+  <meta name="twitter:description" content="An iPhone camera with film-inspired looks named after emotions. What you see is what you save.">
+  <meta name="twitter:image" content="https://feelcam.emfeld.com/assets/img/og-image.jpg">
+
+  <!-- Shows the App Store banner in Safari on iPhone once the app is live. -->
+  <meta name="apple-itunes-app" content="app-id=APP_STORE_ID">
+
+  <link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" as="image" href="/assets/img/screen-viewfinder.webp" type="image/webp">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="/assets/js/main.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "@id": "https://feelcam.emfeld.com/#app",
+        "name": "FeelCam",
+        "description": "An iPhone camera app that shoots through feels: film-inspired looks named after emotions, tunable with film recipe controls, previewed live in the viewfinder.",
+        "operatingSystem": "iOS 18 or later",
+        "applicationCategory": "PhotographyApplication",
+        "url": "https://feelcam.emfeld.com/",
+        "downloadUrl": "https://apps.apple.com/app/feelcam/idAPP_STORE_ID",
+        "installUrl": "https://apps.apple.com/app/feelcam/idAPP_STORE_ID",
+        "image": "https://feelcam.emfeld.com/assets/img/icon-512.png",
+        "screenshot": [
+          "https://feelcam.emfeld.com/assets/img/screen-viewfinder.webp",
+          "https://feelcam.emfeld.com/assets/img/screen-feels.webp",
+          "https://feelcam.emfeld.com/assets/img/screen-craft.webp",
+          "https://feelcam.emfeld.com/assets/img/screen-pro.webp"
+        ],
+        "offers": {
+          "@type": "Offer",
+          "price": "5.99",
+          "priceCurrency": "USD",
+          "category": "Paid"
+        },
+        "publisher": { "@id": "https://feelcam.emfeld.com/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://feelcam.emfeld.com/#org",
+        "name": "FeelCam",
+        "url": "https://feelcam.emfeld.com/",
+        "logo": "https://feelcam.emfeld.com/assets/img/icon-512.png",
+        "email": "erich@emfeld.com"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://feelcam.emfeld.com/#website",
+        "url": "https://feelcam.emfeld.com/",
+        "name": "FeelCam",
+        "publisher": { "@id": "https://feelcam.emfeld.com/#org" }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is FeelCam a subscription?",
+            "acceptedAnswer": { "@type": "Answer", "text": "No. FeelCam is a one-time purchase of $5.99 (or the equivalent in your country). Every feel and every feature is included, with no subscription and no in-app purchases." }
+          },
+          {
+            "@type": "Question",
+            "name": "Which iPhones does FeelCam work on?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Any iPhone running iOS 18 or later, which means iPhone XS, iPhone XR and newer. Natural processing and RAW need an iPhone whose camera can capture RAW." }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the look applied while I shoot, or afterwards?",
+            "acceptedAnswer": { "@type": "Answer", "text": "While you shoot. The viewfinder shows the feel live, and the saved photo looks the same, so you frame and expose for the final image." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I make my own looks?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Start from any feel and tune dynamic range, highlights, shadows, color, color chrome, white balance shift, grain, clarity, sharpness, noise reduction, vignette and more. Save it as your own feel." }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I share a feel with a friend?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Every photo carries the feel it was shot with. Send a photo with Send Feel, and your friend adds the feel from the photo in one tap." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does FeelCam shoot RAW?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Yes. FeelCam can save the camera's ProRAW or RAW file alongside each photo, and its Natural processing develops a single RAW frame itself instead of using the iPhone's computational processing." }
+          },
+          {
+            "@type": "Question",
+            "name": "Does FeelCam collect my data?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Your photos never leave your iPhone. FeelCam sends only anonymous usage counts, such as which feels are used, and you can turn even that off in Settings." }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main">
+      <a class="brand" href="/" aria-label="FeelCam home">
+        <img src="/assets/img/icon-192.png" width="36" height="36" alt="">
+        <span>FeelCam</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#feels">Feels</a></li>
+        <li><a href="#craft">Make your own</a></li>
+        <li><a href="#pro">PRO</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a class="btn btn-small" href="https://apps.apple.com/app/feelcam/idAPP_STORE_ID">Get FeelCam</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">iPhone camera</p>
+          <h1>Shoot through<br>a feel.</h1>
+          <p class="lede">Film-inspired looks, named after emotions. See the look live in the viewfinder, and the photo comes out exactly the way you saw it.</p>
+          <div class="cta">
+            <a class="store-badge" href="https://apps.apple.com/app/feelcam/idAPP_STORE_ID" aria-label="Download FeelCam on the App Store">
+              <span><small>Download on the</small>App Store</span>
+            </a>
+            <p class="price">$5.99 one-time. No subscription.</p>
+          </div>
+        </div>
+        <div class="hero-phones" aria-hidden="true">
+          <figure class="phone phone-back phone-left">
+            <img src="/assets/img/screen-feels-sm.webp" srcset="/assets/img/screen-feels-sm.webp 351w, /assets/img/screen-feels.webp 600w" sizes="(min-width: 900px) 240px, 38vw" width="600" height="1299" alt="" decoding="async">
+          </figure>
+          <figure class="phone phone-front">
+            <img src="/assets/img/screen-viewfinder-sm.webp" srcset="/assets/img/screen-viewfinder-sm.webp 351w, /assets/img/screen-viewfinder.webp 600w" sizes="(min-width: 900px) 280px, 46vw" width="600" height="1299" alt="" fetchpriority="high">
+          </figure>
+          <figure class="phone phone-back phone-right">
+            <img src="/assets/img/screen-craft-sm.webp" srcset="/assets/img/screen-craft-sm.webp 351w, /assets/img/screen-craft.webp 600w" sizes="(min-width: 900px) 240px, 38vw" width="600" height="1299" alt="" decoding="async">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- What you see -->
+    <section class="feature" id="wysiwyg">
+      <div class="wrap feature-grid">
+        <figure class="phone reveal">
+          <img src="/assets/img/screen-viewfinder-sm.webp" srcset="/assets/img/screen-viewfinder-sm.webp 351w, /assets/img/screen-viewfinder.webp 600w" sizes="(min-width: 900px) 300px, 70vw" width="600" height="1299" loading="lazy" decoding="async" alt="FeelCam viewfinder showing pink bougainvillea with the Colorful feel applied live">
+        </figure>
+        <div class="feature-copy reveal">
+          <p class="eyebrow">What you see is what you save</p>
+          <h2>Capture it the way you see it.</h2>
+          <p>Most filter apps add the look afterwards. FeelCam puts it in the viewfinder, so you frame, wait for the light and press the shutter already knowing how the photo will look. No editing later.</p>
+          <ul class="ticks">
+            <li>The live preview and the saved photo use the same image pipeline.</li>
+            <li>A light meter above the shutter shows the exposure from −3 to +3 and turns red when highlights blow out.</li>
+            <li>Grids, aspect ratios including 4:5 for Instagram, HEIF or JPEG, and the volume buttons as a shutter.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feels -->
+    <section class="feels" id="feels">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">16 feels</p>
+          <h2>Pick a feel, not a filter.</h2>
+          <p>Every look is named after the emotion it carries, not a film stock. Choose how the moment felt, and FeelCam does the rest.</p>
+        </div>
+        <div class="feels-layout">
+          <figure class="phone reveal">
+            <img src="/assets/img/screen-feels-sm.webp" srcset="/assets/img/screen-feels-sm.webp 351w, /assets/img/screen-feels.webp 600w" sizes="(min-width: 900px) 280px, 70vw" width="600" height="1299" loading="lazy" decoding="async" alt="The FeelCam feel list with Nostalgia, Pure, Solitude, Memory and Oldschool over a black and white street scene">
+          </figure>
+          <ul class="feel-grid">
+            <li style="--a:#d9d4cc;--b:#7d8b94"><h3>Natural</h3><p>Balanced and honest, for every day</p></li>
+            <li style="--a:#ffcf33;--b:#1f9be0"><h3>Joy</h3><p>Bold color and punch, sunshine and landscapes</p></li>
+            <li style="--a:#ff6f61;--b:#ffc94d"><h3>Colorful</h3><p>Rich, cheerful color with warm, flattering skin</p></li>
+            <li style="--a:#ff9a3c;--b:#127c86"><h3>Summer Sunshine</h3><p>Teal shadows and orange light, summer on a big screen</p></li>
+            <li style="--a:#f6b25e;--b:#b9573b"><h3>Golden Hour</h3><p>Low sun and warm light, the last hour of the day</p></li>
+            <li style="--a:#f5d6cc;--b:#c99a8e"><h3>Tender</h3><p>Soft light and gentle skin, for people you love</p></li>
+            <li style="--a:#b8b29a;--b:#5e6b62"><h3>Wander</h3><p>Muted, documentary, the stories of a journey</p></li>
+            <li style="--a:#8e9a8f;--b:#23282a"><h3>Grit</h3><p>Hard-edged street negative, raw and restless</p></li>
+            <li style="--a:#ffd9b0;--b:#e48f6b"><h3>Glow</h3><p>Warm portraits with a little lift</p></li>
+            <li style="--a:#b7c3d6;--b:#8b7fa6"><h3>Dream</h3><p>Quiet cinema, low contrast and drifting color</p></li>
+            <li style="--a:#d7dccf;--b:#3d4a4f"><h3>Tension</h3><p>Bleached and hard, drama on the edge</p></li>
+            <li style="--a:#e9b46a;--b:#8b5a2b"><h3>Nostalgia</h3><p>Amber afternoons from a long time ago</p></li>
+            <li style="--a:#ffffff;--b:#8fb3d9"><h3>Pure</h3><p>Clear and natural, crisp but true</p></li>
+            <li style="--a:#e6e6e6;--b:#111111"><h3>Solitude</h3><p>Deep black and white, alone with the light</p></li>
+            <li style="--a:#e8d3b0;--b:#7a5a3a"><h3>Memory</h3><p>Sepia, a photograph kept in a drawer</p></li>
+            <li style="--a:#f1d7c0;--b:#9c7b6b"><h3>Oldschool</h3><p>Soft, kind light from an old portrait roll</p></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Craft -->
+    <section class="feature feature-alt" id="craft">
+      <div class="wrap feature-grid feature-grid-flip">
+        <figure class="phone reveal">
+          <img src="/assets/img/screen-craft-sm.webp" srcset="/assets/img/screen-craft-sm.webp 351w, /assets/img/screen-craft.webp 600w" sizes="(min-width: 900px) 300px, 70vw" width="600" height="1299" loading="lazy" decoding="async" alt="The FeelCam feel editor with dynamic range, highlight and shadow sliders over a stop sign">
+        </figure>
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Make your own</p>
+          <h2>Craft your own feel.</h2>
+          <p>Start from any feel and shape it with the controls photographers use for film recipes. Changes show live in the viewfinder as you slide.</p>
+          <ul class="chips" aria-label="Feel controls">
+            <li>Dynamic range DR100 to DR400</li><li>Highlight</li><li>Shadow</li><li>Color</li>
+            <li>Color chrome</li><li>Color chrome blue</li><li>White balance and shift</li><li>Grain and size</li>
+            <li>Clarity</li><li>Sharpness</li><li>Noise reduction</li><li>Vignette</li><li>Exposure</li><li>Mono toning</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Share -->
+    <section class="feature" id="share">
+      <div class="wrap feature-grid">
+        <figure class="photo reveal">
+          <img src="/assets/img/photo-pouch.webp" width="1800" height="1013" loading="lazy" decoding="async" alt="An orange pouch on a wooden desk, shot with FeelCam">
+        </figure>
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Share a feel</p>
+          <h2>Every photo carries its feel.</h2>
+          <p>The recipe travels inside the photo. Send it with <strong>Send Feel</strong>, and a friend adds the exact same look from the photo in one tap. No codes, no screenshots of settings.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRO -->
+    <section class="feature feature-alt" id="pro">
+      <div class="wrap feature-grid feature-grid-flip">
+        <figure class="phone reveal">
+          <img src="/assets/img/screen-pro-sm.webp" srcset="/assets/img/screen-pro-sm.webp 351w, /assets/img/screen-pro.webp 600w" sizes="(min-width: 900px) 300px, 70vw" width="600" height="1299" loading="lazy" decoding="async" alt="FeelCam PRO controls with ISO, shutter, white balance and manual focus over a black and white skyline">
+        </figure>
+        <div class="feature-copy reveal">
+          <p class="eyebrow">PRO controls</p>
+          <h2>Full control when you want it.</h2>
+          <p>Tap <strong>PRO</strong> beside the shutter for manual ISO, shutter speed, white balance and focus, plus aperture on iPhones with a variable aperture. Set one and the rest stay on auto. Leave PRO off and FeelCam stays simple.</p>
+          <ul class="ticks">
+            <li>Zoom buttons for every lens, like the Camera app, including full-quality sensor crops.</li>
+            <li>Save the RAW or ProRAW file alongside each photo.</li>
+            <li>Keep Last Settings opens FeelCam the way you left it.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Natural -->
+    <section class="feature" id="natural">
+      <div class="wrap feature-grid">
+        <figure class="photo photo-tall reveal">
+          <img src="/assets/img/photo-bulbs.webp" width="1013" height="1800" loading="lazy" decoding="async" alt="Warm string light bulbs at dusk with a dove on a rail, straight out of FeelCam">
+        </figure>
+        <div class="feature-copy reveal">
+          <p class="eyebrow">Natural processing</p>
+          <h2>Straight out of camera.</h2>
+          <p>Prefer a photo that looks like a photo? Natural processing skips the iPhone's multi-frame computational look. FeelCam develops a single RAW frame itself, gently, like a film scan, and then applies your feel. Softer contrast, real highlights, honest grain.</p>
+          <p class="note">Natural needs an iPhone that can capture RAW. Switch lenses instead of zooming in this mode.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+      <div class="wrap narrow">
+        <div class="section-head reveal">
+          <p class="eyebrow">Questions</p>
+          <h2>Good to know.</h2>
+        </div>
+        <details>
+          <summary>Is FeelCam a subscription?</summary>
+          <p>No. FeelCam is a one-time purchase of $5.99 (or the equivalent in your country). Every feel and every feature is included, with no subscription and no in-app purchases.</p>
+        </details>
+        <details>
+          <summary>Which iPhones does FeelCam work on?</summary>
+          <p>Any iPhone running iOS 18 or later, which means iPhone XS, iPhone XR and newer. Natural processing and RAW need an iPhone whose camera can capture RAW.</p>
+        </details>
+        <details>
+          <summary>Is the look applied while I shoot, or afterwards?</summary>
+          <p>While you shoot. The viewfinder shows the feel live, and the saved photo looks the same, so you frame and expose for the final image.</p>
+        </details>
+        <details>
+          <summary>Can I make my own looks?</summary>
+          <p>Yes. Start from any feel and tune dynamic range, highlights, shadows, color, color chrome, white balance shift, grain, clarity, sharpness, noise reduction, vignette and more. Save it as your own feel.</p>
+        </details>
+        <details>
+          <summary>Can I share a feel with a friend?</summary>
+          <p>Yes. Every photo carries the feel it was shot with. Send a photo with Send Feel, and your friend adds the feel from the photo in one tap.</p>
+        </details>
+        <details>
+          <summary>Does FeelCam shoot RAW?</summary>
+          <p>Yes. FeelCam can save the camera's ProRAW or RAW file alongside each photo, and its Natural processing develops a single RAW frame itself instead of using the iPhone's computational processing.</p>
+        </details>
+        <details>
+          <summary>Does FeelCam collect my data?</summary>
+          <p>Your photos never leave your iPhone. FeelCam sends only anonymous usage counts, such as which feels are used, and you can turn even that off in Settings. Read the <a href="/privacy/">privacy policy</a>.</p>
+        </details>
+      </div>
+    </section>
+
+    <!-- Final call -->
+    <section class="closing">
+      <div class="wrap closing-inner reveal">
+        <img src="/assets/img/icon-192.png" width="96" height="96" loading="lazy" alt="FeelCam app icon">
+        <h2>Shoot through a feel.</h2>
+        <p>FeelCam for iPhone. $5.99 one-time, every feel included.</p>
+        <a class="store-badge" href="https://apps.apple.com/app/feelcam/idAPP_STORE_ID" aria-label="Download FeelCam on the App Store">
+          <span><small>Download on the</small>App Store</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© <span data-year>2026</span> FeelCam</p>
+      <ul>
+        <li><a href="/privacy/">Privacy Policy</a></li>
+        <li><a href="mailto:erich@emfeld.com">Contact</a></li>
+        <li><a href="https://apps.apple.com/app/feelcam/idAPP_STORE_ID">App Store</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
