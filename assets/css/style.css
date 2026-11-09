@@ -204,6 +204,7 @@ figure { margin: 0; }
 .footer-inner ul { list-style: none; display: flex; gap: 22px; margin: 0; padding: 0; }
 .footer-inner a { color: var(--muted); text-decoration: none; }
 .footer-inner a:hover { color: var(--navy); }
+.footer-inner .made a { color: var(--navy); font-weight: 600; }
 
 /* Policy pages */
 .policy { padding: 64px 0 100px; }
